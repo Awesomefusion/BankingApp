@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Figgle;
+using Microsoft.EntityFrameworkCore;
 
 namespace PrisonEscape
 {
+   class DataContext : DbContext
+    {
+
+    }
     class Program
     {
         private const int MF_BYCOMMAND = 0x00000000;
@@ -42,7 +47,7 @@ namespace PrisonEscape
             static bool Menu()
             {
                 Console.Clear();
-                Console.WriteLine(FiggleFonts.Standard.Render("Banking App"));
+                Console.WriteLine(FiggleFonts.Standard.Render("Equibank App"));
                 Console.WriteLine("Choose an option:");
                 Console.WriteLine("1) Login to your Account");
                 Console.WriteLine("2) Open an Account");
@@ -63,17 +68,24 @@ namespace PrisonEscape
                         return true;
                 }
 
-                static string? LogIn()
+                static string LogIn()
                 {
                     Console.Write("Logged In.");
                     return Console.ReadLine();
                 }
-                static string? OpenAccount()
+                static string OpenAccount()
                 {
                     Console.Write("Account Opened.");
                     return Console.ReadLine();
                 }
             }
+        }
+        public class Account 
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Password { get; set; }
+            public decimal Balance { get; set; }
         }
     }
 }
