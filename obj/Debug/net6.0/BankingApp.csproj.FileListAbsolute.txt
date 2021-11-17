@@ -1,0 +1,17 @@
+C:\Code\C#\BankingApp\bin\Debug\net6.0\BankingApp.exe
+C:\Code\C#\BankingApp\bin\Debug\net6.0\BankingApp.deps.json
+C:\Code\C#\BankingApp\bin\Debug\net6.0\BankingApp.runtimeconfig.json
+C:\Code\C#\BankingApp\bin\Debug\net6.0\BankingApp.dll
+C:\Code\C#\BankingApp\bin\Debug\net6.0\ref\BankingApp.dll
+C:\Code\C#\BankingApp\bin\Debug\net6.0\BankingApp.pdb
+C:\Code\C#\BankingApp\bin\Debug\net6.0\Figgle.dll
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.csproj.AssemblyReference.cache
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.AssemblyInfoInputs.cache
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.AssemblyInfo.cs
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.csproj.CoreCompileInputs.cache
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.csproj.CopyComplete
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.dll
+C:\Code\C#\BankingApp\obj\Debug\net6.0\ref\BankingApp.dll
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.pdb
+C:\Code\C#\BankingApp\obj\Debug\net6.0\BankingApp.genruntimeconfig.cache
