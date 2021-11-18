@@ -2,12 +2,23 @@
 using System.Runtime.InteropServices;
 using Figgle;
 using Microsoft.EntityFrameworkCore;
+using Domain;
 
 namespace PrisonEscape
 {
-   class DataContext : DbContext
+   public class DataContext : DbContext
     {
+        public DbSet<Account> Accounts { get; set; }
+        public string DbPath { get; private set; }
 
+        public DataContext()
+        {
+            var folder = Environment.SpecialFolder.LocalApplicationData;
+            var path = Environment.GetFolderPath(folder);
+            DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}accounts.db";
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseSqlite($"Data Source={DbPath}");
     }
     class Program
     {
@@ -79,13 +90,6 @@ namespace PrisonEscape
                     return Console.ReadLine();
                 }
             }
-        }
-        public class Account 
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public string Password { get; set; }
-            public decimal Balance { get; set; }
         }
     }
 }
