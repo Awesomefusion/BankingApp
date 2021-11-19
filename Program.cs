@@ -4,7 +4,7 @@ using Figgle;
 using Microsoft.EntityFrameworkCore;
 using Domain;
 
-namespace PrisonEscape
+namespace BankingApp
 {
    public class DataContext : DbContext
     {
