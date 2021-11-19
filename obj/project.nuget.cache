@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "fTtscYtJjzyIvVWj6TRhbNzeHnZ4Rw4oQ9bWWrwGWDdefiofevWXxPy+2HFlKN2PR4LCf1yTreWQLPUTyM7IbA==",
+  "dgSpecHash": "FyRX63gYWJ6sHLW+oen2F6Vz+nSOtU8mUTLYZLKJozAMzWNHVBwS7B/x414A/jvtkAMoiWuKhqiRhnw0AMFNfA==",
   "success": true,
-  "projectFilePath": "c:\\Code\\C#\\BankingApp\\BankingApp.csproj",
+  "projectFilePath": "C:\\Code\\C#\\BankingApp\\BankingApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexm\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
+    "C:\\Users\\Alexm\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0\\microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.0\\microsoft.entityframeworkcore.sqlite.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexm\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.0\\microsoft.entityframeworkcore.sqlite.core.6.0.0.nupkg.sha512",

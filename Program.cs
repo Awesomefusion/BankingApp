@@ -86,8 +86,54 @@ namespace PrisonEscape
                 }
                 static string OpenAccount()
                 {
-                    Console.Write("Account Opened.");
-                    return Console.ReadLine();
+                    using (var db = new DataContext())
+                    {
+                        Console.WriteLine(FiggleFonts.Standard.Render("Thank you for choosing Equibank"));
+
+                        var account = new Account();
+                        account.Id = new Guid();
+
+                        Console.WriteLine("Enter your Name, no longer than 21 characters: ");
+                        account.Name = Console.ReadLine();
+                            if (account.Name.Length > 21)
+                            {
+                                Console.WriteLine("Sorry, your name is too long!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Accepted");
+                            }
+
+                        Console.WriteLine("Enter your Account Number, it must be 8 digits: ");
+                        int accountNumber = int.Parse(Console.ReadLine());
+                            if (accountNumber != 8)
+                            {
+                                Console.WriteLine("Number must be 8 digits.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Accepted");
+                            }
+                            account.AccountNumber = accountNumber;
+
+                        Console.WriteLine("Enter your Password, no longer than 14 characters: ");
+                        account.Password = Console.ReadLine();
+                            if (account.Password.Length > 14)
+                            {
+                                Console.WriteLine("Sorry, your password is too long!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Accepted");
+                            }
+
+                        Console.WriteLine("At Equibank we are generous, you have been alotted a balance of 50 to use for free, use it wisely.");
+                        Console.WriteLine($"Account Balance: {account.Balance}");
+                        db.SaveChanges();
+                        Console.WriteLine(FiggleFonts.Standard.Render("Equibank Account Registration Complete"));
+                    }
+                    string s = "Success";
+                    return s;
                 }
             }
         }
