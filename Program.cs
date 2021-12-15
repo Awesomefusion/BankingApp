@@ -40,7 +40,7 @@ class Program
     {
         if (OperatingSystem.IsWindows())
         {
-            Console.Title = "Prison Escape";
+            Console.Title = "Banking App";
             Console.WindowHeight = 50;
             Console.WindowWidth = 125;
         }
@@ -79,8 +79,9 @@ class Program
                     return true;
             }
 
-            static string LogIn()
+            static Account LogIn()
             {
+                var account = new Account();
                 Console.WriteLine(FiggleFonts.Standard.Render("Equibank Login"));
                     using (var db = new DataContext())
                     {
@@ -92,7 +93,7 @@ class Program
                         var number = db.Accounts.Where(n => n.AccountNumber == ainput).FirstOrDefault();
                         Console.WriteLine($"Input accepted, your Account Number is {ainput}.");
 
-                        Console.WriteLine("Enter Account Passowrd: ");
+                        Console.WriteLine("Enter Account Password: ");
                         string pinput = Console.ReadLine();
                         var pword = db.Accounts.Where(p => p.Password == pinput).FirstOrDefault();
                         Console.WriteLine("Password Accepted.");
@@ -104,7 +105,6 @@ class Program
                         Console.WriteLine("Choose an option:");
                         Console.WriteLine("1) Show Transaction Dashboard");
                         Console.WriteLine("2) Exit");
-                        Console.WriteLine("Otherwise press ENTER to return to the main menu");
                         Console.Write("\r\nSelect an option: ");
 
                         switch (Console.ReadLine())
@@ -118,19 +118,43 @@ class Program
                                 return true;
                         }
                     }
-                    string s = "Success";
-                    return s;
+                return account;
             }
-            static string TransactionDashboard()
+            static bool TransactionDashboard()
             {
                     using (var db = new DataContext())
                     {
+                            Console.Clear();
+                            Console.WriteLine("Choose an option:");
+                            Console.WriteLine("1) Make a Transaction");
+                            Console.WriteLine("2) Show Balance");
+                            Console.WriteLine("3) Exit");
+                            Console.Write("\r\nSelect an option: ");
 
+                            switch (Console.ReadLine())
+                            {
+                                case "1":
+                                    MakeTransaction();
+                                    return true;
+                                case "2":
+                                    ShowBalance();
+                                    return true;
+                                case "3":
+                                    return false;
+                                default:
+                                    return true;
+                            }
                     }
-                    string s = "Success";
-                    return s;
+
+                static void MakeTransaction(){
+
+                }
+                static void ShowBalance(){
+                    
+                }
             }
-            static string OpenAccount()
+            
+            static void OpenAccount()
             {
                 Console.WriteLine(FiggleFonts.Standard.Render("Thank you for choosing Equibank"));
                 using (var db = new DataContext())
@@ -179,6 +203,4 @@ class Program
                     Console.WriteLine($"Account Password Registered: {account.Password}");
                     Console.WriteLine($"Account Balance: {account.Balance}");
                         Console.WriteLine(FiggleFonts.Standard.Render("Registration Successful, press ENTER to return to the Menu."));
-                    string s = "Success";
-                    return s;
                 }}}}}}

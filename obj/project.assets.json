@@ -5548,26 +5548,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexm\\.nuget\\packages\\": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\C#\\BankingApp\\BankingApp.csproj",
+      "projectUniqueName": "C:\\Code\\BankingApp\\BankingApp.csproj",
       "projectName": "BankingApp",
-      "projectPath": "C:\\Code\\C#\\BankingApp\\BankingApp.csproj",
-      "packagesPath": "C:\\Users\\Alexm\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\C#\\BankingApp\\obj\\",
+      "projectPath": "C:\\Code\\BankingApp\\BankingApp.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\BankingApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
