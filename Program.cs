@@ -79,9 +79,8 @@ class Program
                     return true;
             }
 
-            static Account LogIn()
+            static void LogIn()
             {
-                var account = new Account();
                 Console.WriteLine(FiggleFonts.Standard.Render("Equibank Login"));
                     using (var db = new DataContext())
                     {
@@ -92,7 +91,6 @@ class Program
                         
                         var number = db.Accounts.Where(n => n.AccountNumber == ainput).FirstOrDefault();
                         Console.WriteLine($"Input accepted, your Account Number is {ainput}.");
-
                         Console.WriteLine("Enter Account Password: ");
                         string pinput = Console.ReadLine();
                         var pword = db.Accounts.Where(p => p.Password == pinput).FirstOrDefault();
@@ -118,7 +116,6 @@ class Program
                                 return true;
                         }
                     }
-                return account;
             }
             static bool TransactionDashboard()
             {
@@ -150,8 +147,8 @@ class Program
 
                 }
                 static void ShowBalance(){
-                    
-                }
+                                       
+                }   
             }
             
             static void OpenAccount()

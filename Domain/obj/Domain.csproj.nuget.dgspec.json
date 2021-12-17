@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\C#\\BankingApp\\BankingApp.csproj": {}
+    "C:\\Code\\C#\\BankingApp\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Code\\C#\\BankingApp\\BankingApp.csproj": {
+    "C:\\Code\\C#\\BankingApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\C#\\BankingApp\\BankingApp.csproj",
-        "projectName": "BankingApp",
-        "projectPath": "C:\\Code\\C#\\BankingApp\\BankingApp.csproj",
+        "projectUniqueName": "C:\\Code\\C#\\BankingApp\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Code\\C#\\BankingApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Alexm\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\C#\\BankingApp\\obj\\",
+        "outputPath": "C:\\Code\\C#\\BankingApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,22 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Figgle": {
-              "target": "Package",
-              "version": "[0.4.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
